@@ -1,6 +1,6 @@
-# ERC-721 simple Solidity smart contract
+# ERC-721 collection simple Solidity smart contract
 
-This project is a simple ERC721 Solidity smart contract and use Hard hat case, integrating other tools commonly used alongside Hard hat in the ecosystem.
+This project is a simple ERC721 collection Solidity smart contract and use Hard hat case, integrating other tools commonly used alongside Hard hat in the ecosystem.
 
 In .env, enter your data. For example default hard hat data:
 
