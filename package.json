@@ -4,10 +4,16 @@
   "description": "ERC-721 Solidity smart contract",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "deploy": "npx hardhat run scripts/deploy.ts",
+    "serve": "npx hardhat node",
     "compile": "npx hardhat compile",
-    "serve": "npx hardhat node"
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:ropstein": "hardhat run --network ropsten scripts/sample-script.ts",
+    "verify:ropstein": "npx hardhat verify --network ropsten",
+    "coverage": "npx hardhat coverage",
+    "test": "test",
+    "clean": "npx hardhat clean",
+    "lint": "npx eslint '**/*.{js,ts}' && npx prettier '**/*.{json,sol,md}' --check && npx prettier '**/*.{json,sol,md}' --write && npx solhint 'contracts/**/*.sol'",
+    "lint:fix": "npx eslint '**/*.{js,ts}' --fix && npx prettier '**/*.{json,sol,md}' --check && npx prettier '**/*.{json,sol,md}' --write && npx solhint 'contracts/**/*.sol' --fix"
   },
   "repository": {
     "type": "git",
