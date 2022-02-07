@@ -7,7 +7,7 @@
     "serve": "npx hardhat node",
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat run scripts/deploy.ts",
-    "deploy:ropstein": "hardhat run --network ropsten scripts/sample-script.ts",
+    "deploy:ropstein": "hardhat run --network ropsten scripts/deploy.ts",
     "verify:ropstein": "npx hardhat verify --network ropsten",
     "coverage": "npx hardhat coverage",
     "test": "test",
