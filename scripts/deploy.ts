@@ -1,12 +1,12 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const ERC721 = await ethers.getContractFactory("ERC721");
-  const erc721 = await ERC721.deploy("Hello, Hardhat!");
+  const ERC721Collection = await ethers.getContractFactory("ERC721Collection");
+  const erc721collection = await ERC721Collection.deploy();
 
-  await erc721.deployed();
+  await erc721collection.deployed();
 
-  console.log("ERC721 deployed to:", erc721.address);
+  console.log("ERC721Collection deployed to:", erc721collection.address);
 }
 
 main().catch((error) => {
