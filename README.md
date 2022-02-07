@@ -10,7 +10,7 @@ ROPSTEN_URL=https://eth-ropsten.alchemyapi.io/v2/<YOUR ALCHEMY KEY>
 PRIVATE_KEY=0xabc123abc123abc123abc123abc123abc123abc123abc123abc123abc123abc1
 ```
 
-Try running some of the following tasks:
+Runnnig tasks:
 
 ```shell
 npm run serve
